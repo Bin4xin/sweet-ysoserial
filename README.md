@@ -23,7 +23,7 @@ origin  https://github.com/threedr3am/ysoserial.git (push)
 ```
 克隆下来的项目无法构建成功；经过排错现push仓库上线。_[进一步了解排错步骤](https://about.sentrylab.cn/help/ALL-mvn-build-errors/){:target="_blank"}_
 
- * _感谢threedr3am_师傅开源的代码；
+ * 感谢[@threedr3am](https://github.com/threedr3am/){:target="_blank"}师傅开源的代码；
  * 吾辈当砥砺前行。
 
 ---
