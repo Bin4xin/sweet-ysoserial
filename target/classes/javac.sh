@@ -1,0 +1,1 @@
+/bin/sh -c cd /Users/bin4xin/blog/github-code/sweet-ysoserial && /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/bin/javac @/Users/bin4xin/blog/github-code/sweet-ysoserial/target/classes/org.codehaus.plexus.compiler.javac.JavacCompiler1864448563875437926arguments
