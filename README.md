@@ -9,7 +9,47 @@ A proof-of-concept tool for generating payloads that exploit unsafe Java object 
 
 ![logo](ysoserial.png)
 
-# ysoserial fixed
+# ysoserial exp extend ;)
+
+---
+
+*2022-11-29 14:52:14 +0800 CST*:
+
+## about
+
+- add `ysoserial/payloads/FastJson.java` For fastjson 反序列化
+
+- add `ysoserial/payloads/JRMPClient_bypass_jep_jdk241.java` For >= jdk241 bypass.
+
+```xml
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>fastjson</artifactId>
+    <version>1.2.48</version>
+</dependency>
+```
+
+## ERROR
+
+```console
+[ERROR] /Users/bin4xin/.../FastJson.java:[3,27] 错误: 程序包com.alibaba.fastjson不存在
+```
+
+- 添加jar到本地仓库
+
+```bash
+mvn install:install-file -Dfile=/Users/bin4xin/path/to/fastjson-1.2.48.jar -DgroupId=com.alibaba -DartifactId=fastjson -Dversion=1.2.48 -Dpackaging=jar
+mvn clean package -DskipTests
+```
+
+## REF
+[java二次反序列化初探 @bmth666 (Orz) ](http://www.bmth666.cn/bmth_blog/2022/09/20/java%E4%BA%8C%E6%AC%A1%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%88%9D%E6%8E%A2/#2022%E7%BD%91%E9%BC%8E%E6%9D%AF-%E7%8E%84%E6%AD%A6%E7%BB%84-ezjava){:target="_blank"}
+
+## READ MORE about above usage.
+
+[2022年网鼎杯玄武组赛题复盘-[Web-ezJava]](https://sentrylab.cn/about/WANGDINGCTF2022-WEB-ezJava-Walkthrough/){:target="_blank"}
+
+---
 
 *2021年 3月31日 星期三 10时22分20秒 CST* 在原仓库中：
 
