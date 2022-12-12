@@ -39,7 +39,7 @@
 							<mainClass>ysoserial.GeneratePayload</mainClass>
 						</manifest>
 					</archive>
-<!--                    <descriptor>assembly.xml</descriptor>-->
+                    <descriptor>assembly.xml</descriptor>
                 </configuration>
 				<executions>
 					<execution>
